@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main () {
+    int N,M,Ai;
+    long long day;
+    cin >>N>>M;
+    for(int i=0;i<M;i=i+1){
+        cin>>Ai;
+        day+=Ai;
+    }
+    if(day>N){
+        cout<<-1;
+    }
+    else{
+        cout<<N-day;
+    }
+}
